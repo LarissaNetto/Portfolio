@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type:y mandatory;
+}
+
+#fotos{
+    display: flex;
+    align-items: center;
+    height: 100VH;
+}
+#fotos .seta{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+}
+
+#fotos  .seta svg{
+    width: 80%;
+}
+
+#fotos .slider{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#fotos .caritel{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: transform 1.6s;
+}
+
+#fotos .caritel img{
+    flex: none;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    user-select: none;
+}
